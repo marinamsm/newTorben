@@ -83,8 +83,10 @@ public class Driver {
       Reader input = null;
       final String name;
       try {
+          System.out.println("MAIN");
          // set the input (source code) to be compiled
          if (options.parameters.isEmpty()) {
+             System.out.println("ENTRADA");
             name = "unknown";
             input = new InputStreamReader(System.in);
          }
@@ -93,6 +95,9 @@ public class Driver {
             input = new FileReader(name);
          }
 
+         //*********************
+         options.lexer = true;
+         //options.parser = true;
          // do only lexical analyses
          if (options.lexer)
             lexicalAnalysis(name, input);
@@ -127,6 +132,7 @@ public class Driver {
    }
 
    private static void lexicalAnalysis(String name, Reader input) throws IOException {
+       System.out.println("AEEEEEEEEEEEEEEEEEEE");
       final Lexer lexer = new Lexer(input, name);
       ComplexSymbolFactory.ComplexSymbol tok;
       do {
