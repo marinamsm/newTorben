@@ -17,10 +17,9 @@ public class Driver {
       Reader input = null;
       final String name;
       try {
-          System.out.println("MAIN");
          // set the input (source code) to be compiled
          if (args.length == 0) {
-             System.out.println("ENTRADA");
+             System.out.println("Digite o código para que seja feita a análise léxica");
             name = "unknown";
             input = new InputStreamReader(System.in);
          }
@@ -57,7 +56,6 @@ public class Driver {
    }
 
    private static void lexicalAnalysis(String name, Reader input) throws IOException {
-       System.out.println("AEEEEEEEEEEEEEEEEEEE");
       final Lexer lexer = new Lexer(input, name);
       ComplexSymbolFactory.ComplexSymbol tok;
       do {

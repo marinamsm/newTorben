@@ -5,6 +5,7 @@ import io.vavr.collection.Tree;
 import parse.Loc;
 import types.TypeBool;
 import types.TypeInt;
+import types.TypeDouble;
 import types.Type;
 
 import static error.ErrorHelper.fatal;
@@ -12,7 +13,7 @@ import static error.ErrorHelper.typeMismatch;
 
 public class ExpBin extends Exp {
    public enum Operator {
-      PLUS, MINUS, TIMES, DIV, MOD,
+      PLUS, MINUS, TIMES, DIV, MOD, EXP,
       EQ, NE, GT, GE, LT, LE,
       AND, OR
    }
@@ -50,7 +51,13 @@ public class ExpBin extends Exp {
             return TypeInt.T;
 
          // COMPLETE THE MISSING BINARY OPERATORS
-
+         case EXP:
+            if (!(left.type.is(TypeInt.T))) {
+                throw typeMismatch(left.loc, left.type, TypeInt.T);
+            }
+            if (! right.type.is(TypeInt.T))
+               throw typeMismatch(right.loc, right.type, TypeInt.T);
+            return TypeInt.T;
          default:
             throw fatal("incomplete semantic analisys of binary operation");
       }
