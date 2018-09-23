@@ -9,6 +9,6 @@ public class TypeDouble extends Type {
 
     @Override
     public String toString() {
-        return "int";
+        return "double";
     }
 }
