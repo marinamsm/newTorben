@@ -1,9 +1,0 @@
-{# programa para cálculo do fatorial
-de um número inteiro #}
-int fatorial(int n) =
-if n > 0 then
-1 # caso base
-else
-n * fatorial(n-1) # caso recursivo
-int main() =
-printint(fatorial(7))
