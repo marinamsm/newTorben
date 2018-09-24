@@ -1,8 +1,0 @@
-bool par(int n) =
-  n = 0 || impar(n-1)
-
-bool impar(int n) =
-  if n = 0 then false else par(n-1)
-
-int main(int algo) =
-  ( par(5), 0 )

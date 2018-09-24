@@ -83,6 +83,11 @@ import java_cup.runtime.ComplexSymbolFactory;
 %state STR
 
 litint    = [0-9]+
+FLit1    = [0-9]+ \. [0-9]*
+FLit2    = \. [0-9]+
+FLit3    = [0-9]+
+Exponent = [eE] [+-]? [0-9]+
+litdouble = ({FLit1}|{FLit2}|{FLit3}) {Exponent}?
 id        = [a-zA-Z][a-zA-Z0-9_]*
 
 %%
@@ -95,12 +100,14 @@ id        = [a-zA-Z][a-zA-Z0-9_]*
 true         { return tok(LITBOOL, true); }
 false        { return tok(LITBOOL, false); }
 {litint}     { return tok(LITINT, new Integer(yytext())); }
+{litdouble}  { return tok(LITDOUBLE, new Double(yytext())); }
 \"           { builder.setLength(0); strLeft = locLeft(); yybegin(STR); }
 
 void         { return tok(VOID); }
-bool         { return tok(BOOL); }
-int          { return tok(INT); }
-string       { return tok(STRING); }
+bool         { return tok(TypeBool); }
+int          { return tok(TypeInt); }
+double       { return tok(TypeDouble); }
+string       { return tok(TypeString); }
 if           { return tok(IF); }
 then         { return tok(THEN); }
 else         { return tok(ELSE); }
@@ -117,6 +124,7 @@ in           { return tok(IN); }
 "*"          { return tok(TIMES); }
 "/"          { return tok(DIV); }
 "%"          { return tok(MOD); }
+"^"          { return tok(EXP); }
 "="          { return tok(EQ); }
 "<>"         { return tok(NE); }
 "<"          { return tok(LT); }
@@ -129,6 +137,8 @@ in           { return tok(IN); }
 "("          { return tok(LPAREN); }
 ")"          { return tok(RPAREN); }
 ","          { return tok(COMMA); }
+"#" .*       { return tok(LCOMMENT); }
+"{#" .* "#}" { return tok(BCOMMENT); }
 }
 
 <COMMENT>{

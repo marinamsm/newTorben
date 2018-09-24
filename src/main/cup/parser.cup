@@ -41,14 +41,15 @@ parser code {:
 
 terminal Boolean LITBOOL;
 terminal Integer LITINT;
+terminal Double  LITDOUBLE;
 terminal String  LITSTRING;
 terminal String  ID;
 terminal         ASSIGN;
-terminal         PLUS, MINUS, TIMES, DIV, MOD, UMINUS;
+terminal         PLUS, MINUS, TIMES, DIV, MOD, UMINUS, EXP;
 terminal         EQ, NE, LT, LE, GT, GE;
 terminal         AND, OR;
-terminal         LPAREN, RPAREN, COMMA;
-terminal         VOID, BOOL, INT, STRING;
+terminal         LPAREN, RPAREN, COMMA, BCOMMENT, LCOMMENT;
+terminal         VOID, TypeBool, TypeInt, TypeDouble, TypeString;
 terminal         IF, THEN, ELSE;
 terminal         WHILE, DO;
 terminal         LET, IN;
@@ -65,9 +66,11 @@ non terminal List<Fun> funs;
 precedence left OR;
 precedence left AND;
 precedence nonassoc EQ, NE, GT, GE, LT, LE;
-precedence left PLUS, MINUS;
-precedence left TIMES, DIV, MOD;
 precedence nonassoc UMINUS;
+precedence left PLUS, MINUS, EXP;
+precedence left TIMES, DIV, MOD;
+precedence right ASSIGN;
+precedence right THEN, ELSE, DO, IN;
 
 start with program;
 
@@ -78,6 +81,7 @@ program ::=
 exp ::=
   LITBOOL:x                                 {: RESULT = new ExpBool(loc(xxleft,xxright), x); :}
 | LITINT:x                                  {: RESULT = new ExpInt(loc(xxleft,xxright), x); :}
+| LITDOUBLE:x                               {: RESULT = new ExpDouble(loc(xxleft,xxright), x); :}
 | LITSTRING:x                               {: RESULT = new ExpString(loc(xxleft,xxright), x); :}
 | exp:x AND exp:y                           {: RESULT = new ExpBin(loc(xxleft,yxright), ExpBin.Operator.AND, x, y); :}
 | exp:x OR exp:y                            {: RESULT = new ExpBin(loc(xxleft,yxright), ExpBin.Operator.OR, x, y); :}
@@ -93,6 +97,8 @@ exp ::=
 | exp:x DIV exp:y                           {: RESULT = new ExpBin(loc(xxleft,yxright), ExpBin.Operator.DIV, x, y); :}
 | exp:x MOD exp:y                           {: RESULT = new ExpBin(loc(xxleft,yxright), ExpBin.Operator.MOD, x, y); :}
 | MINUS:m exp:x                             {: RESULT = new ExpMinus(loc(mxleft,xxright), x); :} %prec UMINUS
+| LCOMMENT:m exp:x                          {: RESULT = new ExpMinus(loc(mxleft,xxright), x); :} %prec UMINUS
+| BCOMMENT:m exp:x                          {: RESULT = new ExpMinus(loc(mxleft,xxright), x); :} %prec UMINUS
 | LPAREN:l exps:s RPAREN:r                  {: RESULT = new ExpSeq(loc(lxleft,rxright), s); :}
 | ID:v                                      {: RESULT = new ExpVar(loc(vxleft,vxright), v); :}
 | ID:v ASSIGN exp:e                         {: RESULT = new ExpAssign(loc(vxleft,exright), v, e); :}
@@ -137,7 +143,8 @@ typeidsRest ::=
 
 typename ::=
   VOID                                      {: RESULT = TypeName.VOID; :}
-| BOOL                                      {: RESULT = TypeName.BOOL; :}
-| INT                                       {: RESULT = TypeName.INT; :}
-| STRING                                    {: RESULT = TypeName.STRING; :}
+| TypeBool                                  {: RESULT = TypeName.TypeBool; :}
+| TypeInt                                   {: RESULT = TypeName.TypeInt; :}
+| TypeDouble                                {: RESULT = TypeName.TypeDouble; :}
+| TypeString                                {: RESULT = TypeName.TypeString; :}
 ;
