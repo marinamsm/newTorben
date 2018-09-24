@@ -94,7 +94,6 @@ id        = [a-zA-Z][a-zA-Z0-9_]*
 
 <YYINITIAL>{
 [ \t\f\n\r]+ { /* skip */ }
-"#" .*       { /* skip */ }
 "{#"         { yybegin(COMMENT); commentLevel = 1; }
 
 true         { return tok(LITBOOL, true); }

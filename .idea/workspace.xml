@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40d07a5e-4339-44c7-b0e6-46f4f7bd9a01" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/doc/bcc328.2017-2.torben.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/bcc328.2017-2.torben.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/p1.torben" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/p2.torben" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/par-impar.torben" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/cup/parser.cup" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/cup/parser.cup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/jflex/lexer.jflex" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/jflex/lexer.jflex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LexerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LexerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/jflex/parse/Lexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/jflex/parse/Lexer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,14 +30,14 @@
         <counts>
           <entry key="class" value="2" />
           <entry key="cup" value="3" />
-          <entry key="java" value="137" />
+          <entry key="java" value="138" />
           <entry key="jflex" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="137" />
+          <entry key="JAVA" value="138" />
           <entry key="PLAIN_TEXT" value="7" />
         </counts>
       </usages-collector>
@@ -48,14 +45,14 @@
         <counts>
           <entry key="cup" value="475" />
           <entry key="dummy" value="4" />
-          <entry key="java" value="974" />
-          <entry key="jflex" value="475" />
+          <entry key="java" value="1449" />
+          <entry key="jflex" value="514" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="974" />
-          <entry key="PLAIN_TEXT" value="954" />
+          <entry key="JAVA" value="1449" />
+          <entry key="PLAIN_TEXT" value="993" />
         </counts>
       </usages-collector>
     </session>
@@ -65,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/Driver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-336">
-              <caret line="21" column="85" selection-start-line="21" selection-start-column="85" selection-end-line="21" selection-end-column="85" />
+            <state relative-caret-position="959">
+              <caret line="63" column="37" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,8 +74,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/jflex/lexer.jflex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="157" column="38" lean-forward="true" selection-start-line="157" selection-start-column="38" selection-end-line="157" selection-end-column="38" />
+            <state relative-caret-position="-682">
+              <caret line="95" column="27" selection-start-line="95" selection-start-column="27" selection-end-line="95" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/cup/parser.cup">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="850">
+              <caret line="50" column="31" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -86,7 +92,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/absyn/ExpMinus.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="120">
               <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -107,29 +113,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/generated-sources/jflex/parse/Lexer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="998" column="25" selection-start-line="998" selection-start-column="25" selection-end-line="998" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/cup/parser.cup">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="147" column="75" selection-start-line="147" selection-start-column="75" selection-end-line="147" selection-end-column="75" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/LexerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="62" column="46" selection-start-line="62" selection-start-column="46" selection-end-line="62" selection-end-column="46" />
+            <state relative-caret-position="97">
+              <caret line="62" column="7" selection-start-line="62" selection-start-column="7" selection-end-line="62" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -167,6 +155,9 @@
       <find>DOUBLE</find>
       <find>MINUS</find>
       <find>invalid char</find>
+      <find>EOF</find>
+      <find>RPAREN</find>
+      <find>eof</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -206,10 +197,10 @@
         <option value="$PROJECT_DIR$/src/main/java/absyn/ExpComment.java" />
         <option value="$PROJECT_DIR$/src/main/java/absyn/ExpBin.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/Driver.java" />
-        <option value="$PROJECT_DIR$/src/test/java/LexerTest.java" />
         <option value="$PROJECT_DIR$/target/generated-sources/cup/parse/Parser.java" />
-        <option value="$PROJECT_DIR$/src/main/jflex/lexer.jflex" />
         <option value="$PROJECT_DIR$/src/main/cup/parser.cup" />
+        <option value="$PROJECT_DIR$/src/main/jflex/lexer.jflex" />
+        <option value="$PROJECT_DIR$/src/test/java/LexerTest.java" />
       </list>
     </option>
   </component>
@@ -300,14 +291,6 @@
               <item name="torben-java" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="types" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="torben" type="b2602c69:ProjectViewProjectNode" />
-              <item name="torben-java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="jflex" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -336,10 +319,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537749363688" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537753918961" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../codigo_prof_tp1/torben-java" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -358,7 +345,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Driver">
+  <component name="RunManager" selected="JUnit.LexerTest">
     <configuration name="Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Driver" />
       <module name="torben" />
@@ -386,8 +373,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Driver" />
         <item itemvalue="JUnit.LexerTest" />
+        <item itemvalue="Application.Driver" />
       </list>
     </recent_temporary>
   </component>
@@ -404,38 +391,44 @@
       <workItem from="1537637568231" duration="2246000" />
       <workItem from="1537641654177" duration="6666000" />
       <workItem from="1537649497444" duration="703000" />
-      <workItem from="1537709743775" duration="29870000" />
+      <workItem from="1537709743775" duration="34418000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LexerTest - 2018.09.23 at 19h 00m 03s.xml">
+    <history-entry file="LexerTest - 2018.09.23 at 22h 43m 02s.xml">
       <configuration name="LexerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LexerTest - 2018.09.23 at 19h 14m 54s.xml">
+    <history-entry file="LexerTest - 2018.09.23 at 22h 43m 44s.xml">
       <configuration name="LexerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LexerTest - 2018.09.23 at 19h 19m 49s.xml">
+    <history-entry file="LexerTest - 2018.09.23 at 22h 44m 30s.xml">
       <configuration name="LexerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LexerTest - 2018.09.23 at 19h 23m 46s.xml">
+    <history-entry file="LexerTest - 2018.09.23 at 22h 46m 09s.xml">
       <configuration name="LexerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LexerTest - 2018.09.23 at 19h 26m 23s.xml">
+    <history-entry file="LexerTest - 2018.09.23 at 22h 46m 27s.xml">
       <configuration name="LexerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LexerTest - 2018.09.23 at 19h 28m 54s.xml">
+    <history-entry file="LexerTest - 2018.09.23 at 22h 46m 45s.xml">
       <configuration name="LexerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LexerTest - 2018.09.23 at 19h 46m 44s.xml">
+    <history-entry file="LexerTest - 2018.09.23 at 22h 48m 49s.xml">
       <configuration name="LexerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LexerTest - 2018.09.23 at 20h 26m 31s.xml">
+    <history-entry file="LexerTest - 2018.09.23 at 22h 49m 07s.xml">
+      <configuration name="LexerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LexerTest - 2018.09.23 at 22h 51m 07s.xml">
+      <configuration name="LexerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LexerTest - 2018.09.23 at 22h 51m 33s.xml">
       <configuration name="LexerTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39485000" />
+    <option name="totallyTimeSpent" value="44033000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -451,7 +444,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.14590164" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.52131146" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33442622" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -469,8 +462,39 @@
       <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" visible="true" weight="0.12556732" />
+      <window_info anchor="right" id="Maven Projects" order="8" visible="true" weight="0.12481089" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30030257" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Learn" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.14590164" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.452459" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3293919" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32786885" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3295082" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" visible="true" weight="0.12481089" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -755,16 +779,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-336">
-          <caret line="21" column="85" selection-start-line="21" selection-start-column="85" selection-end-line="21" selection-end-column="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/absyn/TypeName.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
@@ -772,20 +786,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/LexerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="62" column="46" selection-start-line="62" selection-start-column="46" selection-end-line="62" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/cup/parse/SymbolConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -823,17 +823,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/jflex/lexer.jflex">
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/jflex/parse/Lexer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="157" column="38" lean-forward="true" selection-start-line="157" selection-start-column="38" selection-end-line="157" selection-end-column="38" />
+        <state relative-caret-position="97">
+          <caret line="998" column="25" selection-start-line="998" selection-start-column="25" selection-end-line="998" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/absyn/ExpMinus.java">
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/cup/parse/SymbolConstants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="-65">
+          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="959">
+          <caret line="63" column="37" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -850,19 +857,112 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/jflex/parse/Lexer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/absyn/ExpMinus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="998" column="25" selection-start-line="998" selection-start-column="25" selection-end-line="998" selection-end-column="25" />
+        <state relative-caret-position="120">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/cup/parser.cup">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="147" column="75" selection-start-line="147" selection-start-column="75" selection-end-line="147" selection-end-column="75" />
+        <state relative-caret-position="850">
+          <caret line="50" column="31" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="31" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/jflex/lexer.jflex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-682">
+          <caret line="95" column="27" selection-start-line="95" selection-start-column="27" selection-end-line="95" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/LexerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="62" column="7" selection-start-line="62" selection-start-column="7" selection-end-line="62" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>torben</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.beust:jcommander:1.72</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
